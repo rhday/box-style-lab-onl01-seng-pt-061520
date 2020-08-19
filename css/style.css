@@ -5,6 +5,9 @@ body, html {
   margin: 0 auto;
   display: block;
   text-align: center;
+  /* add in background image and set size to "cover"*/
+  background: url("../images/white-wood.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
 .container, h1 {
@@ -22,6 +25,15 @@ h4 {
   margin: 20px 0 0 0;
 }
 
+/* select the images and put a small border around them */
+
+img {
+  box-sizing: border-box;
+  border: 2px #333;
+}
+
+/* set border and shadow around the boxes */
+
 .amiable {
   border: 1px solid #22aa44;
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
@@ -29,12 +41,44 @@ h4 {
 
 }
 
+/* make the headings fade left to right */
+
+h4.amiable {
+  background: linear-gradient(
+    to right, #22aa44, #44cc66
+  );
+}
+
+/* set border and shadow around the boxes */
+
 .indifferent {
+  border: 1px solid #aaaa00;
+  box-shadow: -1px 1px #aaaa00, -2px 2px #aaaa00, -3px 3px #aaaa00, -4px 4px #aaaa00, -5px 5px #aaaa00;
   background-color: #dddd22;
 }
 
+/* make the headings fade left to right */
+
+h4.indifferent {
+  background: linear-gradient(
+    to right, #aaaa00, #dddd22
+  );
+}
+
+/* set border and shadow around the boxes */
+
 .dubious {
+  border: #8b0000;
+  box-shadow: -1px 1px #8b0000, -2px 2px #8b0000, -3px 3px #8b0000, -4px 4px #8b0000, -5px 5px #8b0000;
   background-color: #dd4444;
+}
+
+/* make the headings fade left to right */
+
+h4.dubious {
+  background: linear-gradient(
+    to right, #8b0000, #dd4444
+  );
 }
 
 .column {
